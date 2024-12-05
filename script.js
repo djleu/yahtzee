@@ -72,7 +72,7 @@ function setPlayers() {
                 const input = document.createElement("input");
                 input.type = "number";
                 input.min = "0";
-                input.value = "0";
+                input.value = ""; // Leave the input blank initially
                 input.classList.add(`player${i}`, `${category.name.replace(/\s+/g, "").toLowerCase()}`);
                 input.addEventListener("input", calculateTotals);
                 scoreCell.appendChild(input);
